@@ -56,7 +56,7 @@ test("impair", () => {
     return task().then(either => {
         expect(E.isRight(either)).toBeTruthy();
         if (E.isRight(either)) {
-            expect(either.right).toBe(6);
+            expect(either.right).toBe(3);
         }
     })
 }, 1000 * 60 * 10)
@@ -98,7 +98,7 @@ test("zrest-impair", () => {
     return task().then(either => {
         expect(E.isRight(either)).toBeTruthy();
         if (E.isRight(either)) {
-            expect(either.right).toBe(6);
+            expect(either.right).toBe(3);
         }
     })
 }, 1000 * 60 * 10);
